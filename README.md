@@ -1,6 +1,6 @@
-# Catchy Next
+# Developer Voice
 
-Catchy agency website built with DatoCMS + Next.js
+Developer Voice website built with DatoCMS + Next.js
 
 ```sh
 npm run i       # install dependencies

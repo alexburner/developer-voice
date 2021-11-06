@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://catchyagency.com',
+  siteUrl: 'https://thedevelopervoice.com',
   generateRobotsTxt: true,
   exclude: '/home',
 }
