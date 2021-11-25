@@ -49,7 +49,7 @@ export const BlockSections: FC<{
             return (
               <section
                 key={block.id}
-                className="section BannerRecord hero is-dark is-relative"
+                className="section BannerRecord is-relative"
               >
                 {block.backgroundImage?.responsiveImage && (
                   <div
