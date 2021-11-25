@@ -1,4 +1,4 @@
-$grey-darkest: #0d202c;
+$grey-darkest: $cam-back;
 $grey-darker: lighten($grey-darkest, 6);
 $grey-dark: lighten($grey-darkest, 12);
 $grey: lighten($grey-darkest, 18);
@@ -13,7 +13,7 @@ $blue: #2ba2c3;
 $purple: #8e44ad;
 $red: #e74c3c;
 $white-ter: #ecf0f1;
-$primary: $turquoise;
+$primary: $cam-primary;
 $yellow-invert: #fff;
 
 $family-sans-serif: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -40,7 +40,7 @@ $footer-background-color: $background;
 $button-background-color: $background;
 $button-border-color: lighten($button-background-color, 15);
 
-$title-color: #fff;
+$title-color: $cam-primary;
 $subtitle-color: $grey-light;
 $subtitle-strong-color: $grey-light;
 
@@ -52,7 +52,7 @@ $box-color: $text;
 $box-background-color: $grey-dark;
 $box-shadow: none;
 
-$link: $blue;
+$link: $cam-link;
 $link-hover: lighten($link, 5);
 $link-focus: darken($link, 5);
 $link-active: darken($link, 5);
