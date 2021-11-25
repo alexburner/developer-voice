@@ -9,6 +9,12 @@ export const Banner: FC<{
 }> = ({ block }) => (
   <div className="columns">
     <div className="column">
+      {block.logoImage && (
+        <Image
+          data={block.logoImage.responsiveImage as ResponsiveImageType}
+          lazyLoad={false}
+        />
+      )}
       {block.title && <h1 className="title is-1">{block.title}</h1>}
       {block.text && (
         <div

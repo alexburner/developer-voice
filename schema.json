@@ -247,6 +247,18 @@
             "deprecationReason": null
           },
           {
+            "name": "logoImage",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "FileField",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "showContactButton",
             "description": null,
             "args": [],
@@ -509,71 +521,23 @@
             "deprecationReason": null
           },
           {
-            "name": "previewImage",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "FileFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "categories",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "LinksFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "description",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "TextFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "seo",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "SeoFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "preview",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "JsonFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "slug",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "SlugFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "title",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "StringFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -593,11 +557,59 @@
             "deprecationReason": null
           },
           {
-            "name": "title",
+            "name": "preview",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "StringFilter",
+              "name": "JsonFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "seo",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SeoFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "description",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "TextFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "categories",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "LinksFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "previewImage",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "FileFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -767,18 +779,6 @@
             "deprecationReason": null
           },
           {
-            "name": "date_ASC",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "date_DESC",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "title_ASC",
             "description": null,
             "isDeprecated": false,
@@ -786,6 +786,18 @@
           },
           {
             "name": "title_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "date_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "date_DESC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -2508,11 +2520,11 @@
             "deprecationReason": null
           },
           {
-            "name": "logo",
+            "name": "name",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "FileFilter",
+              "name": "StringFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -2520,11 +2532,11 @@
             "deprecationReason": null
           },
           {
-            "name": "name",
+            "name": "logo",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "StringFilter",
+              "name": "FileFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -3572,31 +3584,7 @@
             "deprecationReason": null
           },
           {
-            "name": "text",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "TextFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "image",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "FileFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "title",
+            "name": "textAlign",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -3620,11 +3608,35 @@
             "deprecationReason": null
           },
           {
-            "name": "textAlign",
+            "name": "title",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "StringFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "image",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "FileFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "text",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "TextFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -3794,13 +3806,13 @@
             "deprecationReason": null
           },
           {
-            "name": "title_ASC",
+            "name": "textAlign_ASC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "title_DESC",
+            "name": "textAlign_DESC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -3818,13 +3830,13 @@
             "deprecationReason": null
           },
           {
-            "name": "textAlign_ASC",
+            "name": "title_ASC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "textAlign_DESC",
+            "name": "title_DESC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -4940,18 +4952,6 @@
             "deprecationReason": null
           },
           {
-            "name": "previewImage",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "FileFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "slug",
             "description": null,
             "type": {
@@ -4964,23 +4964,11 @@
             "deprecationReason": null
           },
           {
-            "name": "description",
+            "name": "title",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "TextFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "preview",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "JsonFilter",
+              "name": "StringFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -5000,11 +4988,35 @@
             "deprecationReason": null
           },
           {
-            "name": "title",
+            "name": "preview",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "StringFilter",
+              "name": "JsonFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "description",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "TextFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "previewImage",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "FileFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -5575,7 +5587,7 @@
         "inputFields": [
           {
             "name": "gt",
-            "description": "Filter records with a value that's strictly greater than the one specified",
+            "description": "Filter records with a value that's strictly greater than the one specified. Seconds and milliseconds are truncated from the argument.",
             "type": {
               "kind": "SCALAR",
               "name": "DateTime",
@@ -5587,7 +5599,7 @@
           },
           {
             "name": "lt",
-            "description": "Filter records with a value that's less than the one specified",
+            "description": "Filter records with a value that's less than the one specified. Seconds and milliseconds are truncated from the argument.",
             "type": {
               "kind": "SCALAR",
               "name": "DateTime",
@@ -5599,7 +5611,7 @@
           },
           {
             "name": "gte",
-            "description": "Filter records with a value that's greater than or equal to than the one specified",
+            "description": "Filter records with a value that's greater than or equal to than the one specified. Seconds and milliseconds are truncated from the argument.",
             "type": {
               "kind": "SCALAR",
               "name": "DateTime",
@@ -5611,7 +5623,31 @@
           },
           {
             "name": "lte",
-            "description": "Filter records with a value that's less or equal than the one specified",
+            "description": "Filter records with a value that's less or equal than the one specified. Seconds and milliseconds are truncated from the argument.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "eq",
+            "description": "Filter records with a value that's within the specified minute range. Seconds and milliseconds are truncated from the argument.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "neq",
+            "description": "Filter records with a value that's outside the specified minute range. Seconds and milliseconds are truncated from the argument.",
             "type": {
               "kind": "SCALAR",
               "name": "DateTime",
@@ -5627,30 +5663,6 @@
             "type": {
               "kind": "SCALAR",
               "name": "BooleanType",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "eq",
-            "description": "Search for records with an exact match (seconds are truncated)",
-            "type": {
-              "kind": "SCALAR",
-              "name": "DateTime",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "neq",
-            "description": "Exclude records with an exact match",
-            "type": {
-              "kind": "SCALAR",
-              "name": "DateTime",
               "ofType": null
             },
             "defaultValue": null,
@@ -5931,7 +5943,19 @@
             "deprecationReason": null
           },
           {
-            "name": "fileUrl",
+            "name": "slug",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SlugFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "title",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -5943,7 +5967,55 @@
             "deprecationReason": null
           },
           {
-            "name": "linkText",
+            "name": "description",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "TextFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "previewImage",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "FileFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "preview",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "JsonFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "seo",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SeoFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "fileName",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -5967,7 +6039,7 @@
             "deprecationReason": null
           },
           {
-            "name": "fileName",
+            "name": "linkText",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -5979,67 +6051,7 @@
             "deprecationReason": null
           },
           {
-            "name": "seo",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "SeoFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "preview",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "JsonFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "slug",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "SlugFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "previewImage",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "FileFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "description",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "TextFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "title",
+            "name": "fileUrl",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -6213,37 +6225,13 @@
             "deprecationReason": null
           },
           {
-            "name": "fileUrl_ASC",
+            "name": "title_ASC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "fileUrl_DESC",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "linkText_ASC",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "linkText_DESC",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "messageText_ASC",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "messageText_DESC",
+            "name": "title_DESC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -6261,13 +6249,37 @@
             "deprecationReason": null
           },
           {
-            "name": "title_ASC",
+            "name": "messageText_ASC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "title_DESC",
+            "name": "messageText_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "linkText_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "linkText_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "fileUrl_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "fileUrl_DESC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -6975,6 +6987,22 @@
               "ofType": {
                 "kind": "SCALAR",
                 "name": "UploadId",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "md5",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
                 "ofType": null
               }
             },
@@ -8313,19 +8341,7 @@
             "deprecationReason": null
           },
           {
-            "name": "method",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "StringFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "action",
+            "name": "title",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -8349,7 +8365,19 @@
             "deprecationReason": null
           },
           {
-            "name": "title",
+            "name": "action",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "StringFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "method",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -8523,25 +8551,13 @@
             "deprecationReason": null
           },
           {
-            "name": "method_ASC",
+            "name": "title_ASC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "method_DESC",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "action_ASC",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "action_DESC",
+            "name": "title_DESC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -8559,13 +8575,25 @@
             "deprecationReason": null
           },
           {
-            "name": "title_ASC",
+            "name": "action_ASC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "title_DESC",
+            "name": "action_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "method_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "method_DESC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -12593,11 +12621,11 @@
             "deprecationReason": null
           },
           {
-            "name": "image",
+            "name": "name",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "FileFilter",
+              "name": "StringFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -12617,11 +12645,11 @@
             "deprecationReason": null
           },
           {
-            "name": "name",
+            "name": "image",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "StringFilter",
+              "name": "FileFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -12791,18 +12819,6 @@
             "deprecationReason": null
           },
           {
-            "name": "title_ASC",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "title_DESC",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "name_ASC",
             "description": null,
             "isDeprecated": false,
@@ -12810,6 +12826,18 @@
           },
           {
             "name": "name_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "title_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "title_DESC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -13502,11 +13530,11 @@
             "deprecationReason": null
           },
           {
-            "name": "previewImage",
+            "name": "slug",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "FileFilter",
+              "name": "SlugFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -13514,47 +13542,11 @@
             "deprecationReason": null
           },
           {
-            "name": "preview",
+            "name": "title",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "JsonFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "seo",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "SeoFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "description",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "TextFilter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "showBreadcrumbs",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "BooleanFilter",
+              "name": "StringFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -13574,11 +13566,11 @@
             "deprecationReason": null
           },
           {
-            "name": "slug",
+            "name": "showBreadcrumbs",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "SlugFilter",
+              "name": "BooleanFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -13586,11 +13578,47 @@
             "deprecationReason": null
           },
           {
-            "name": "title",
+            "name": "description",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "StringFilter",
+              "name": "TextFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "seo",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SeoFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "preview",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "JsonFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "previewImage",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "FileFilter",
               "ofType": null
             },
             "defaultValue": null,
@@ -13760,13 +13788,13 @@
             "deprecationReason": null
           },
           {
-            "name": "showBreadcrumbs_ASC",
+            "name": "title_ASC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "showBreadcrumbs_DESC",
+            "name": "title_DESC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -13784,13 +13812,13 @@
             "deprecationReason": null
           },
           {
-            "name": "title_ASC",
+            "name": "showBreadcrumbs_ASC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "title_DESC",
+            "name": "showBreadcrumbs_DESC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -14157,7 +14185,7 @@
         "inputFields": [
           {
             "name": "gt",
-            "description": "Filter records with a value that's strictly greater than the one specified",
+            "description": "Filter records with a value that's strictly greater than the one specified. Seconds and milliseconds are truncated from the argument.",
             "type": {
               "kind": "SCALAR",
               "name": "DateTime",
@@ -14169,7 +14197,7 @@
           },
           {
             "name": "lt",
-            "description": "Filter records with a value that's less than the one specified",
+            "description": "Filter records with a value that's less than the one specified. Seconds and milliseconds are truncated from the argument.",
             "type": {
               "kind": "SCALAR",
               "name": "DateTime",
@@ -14181,7 +14209,7 @@
           },
           {
             "name": "gte",
-            "description": "Filter records with a value that's greater than or equal to than the one specified",
+            "description": "Filter records with a value that's greater than or equal to than the one specified. Seconds and milliseconds are truncated from the argument.",
             "type": {
               "kind": "SCALAR",
               "name": "DateTime",
@@ -14193,7 +14221,31 @@
           },
           {
             "name": "lte",
-            "description": "Filter records with a value that's less or equal than the one specified",
+            "description": "Filter records with a value that's less or equal than the one specified. Seconds and milliseconds are truncated from the argument.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "eq",
+            "description": "Filter records with a value that's within the specified minute range. Seconds and milliseconds are truncated from the argument.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "neq",
+            "description": "Filter records with a value that's outside the specified minute range. Seconds and milliseconds are truncated from the argument.",
             "type": {
               "kind": "SCALAR",
               "name": "DateTime",
@@ -14209,30 +14261,6 @@
             "type": {
               "kind": "SCALAR",
               "name": "BooleanType",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "eq",
-            "description": "Search for records with an exact match (seconds are truncated)",
-            "type": {
-              "kind": "SCALAR",
-              "name": "DateTime",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "neq",
-            "description": "Exclude records with an exact match",
-            "type": {
-              "kind": "SCALAR",
-              "name": "DateTime",
               "ofType": null
             },
             "defaultValue": null,
@@ -17094,7 +17122,7 @@
             "deprecationReason": null
           },
           {
-            "name": "fontAwesomeIcon",
+            "name": "title",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -17118,7 +17146,7 @@
             "deprecationReason": null
           },
           {
-            "name": "title",
+            "name": "fontAwesomeIcon",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -17292,18 +17320,6 @@
             "deprecationReason": null
           },
           {
-            "name": "fontAwesomeIcon_ASC",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "fontAwesomeIcon_DESC",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "title_ASC",
             "description": null,
             "isDeprecated": false,
@@ -17311,6 +17327,18 @@
           },
           {
             "name": "title_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "fontAwesomeIcon_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "fontAwesomeIcon_DESC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -17921,6 +17949,30 @@
               "kind": "OBJECT",
               "name": "GlobalSeoField",
               "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "locales",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "ENUM",
+                    "name": "SiteLocale",
+                    "ofType": null
+                  }
+                }
+              }
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -19213,7 +19265,7 @@
         "inputFields": [
           {
             "name": "gt",
-            "description": "Filter records with a value that's strictly greater than the one specified",
+            "description": "Filter records with a value that's strictly greater than the one specified. Seconds and milliseconds are truncated from the argument.",
             "type": {
               "kind": "SCALAR",
               "name": "DateTime",
@@ -19225,7 +19277,7 @@
           },
           {
             "name": "lt",
-            "description": "Filter records with a value that's less than the one specified",
+            "description": "Filter records with a value that's less than the one specified. Seconds and milliseconds are truncated from the argument.",
             "type": {
               "kind": "SCALAR",
               "name": "DateTime",
@@ -19237,7 +19289,7 @@
           },
           {
             "name": "gte",
-            "description": "Filter records with a value that's greater than or equal to than the one specified",
+            "description": "Filter records with a value that's greater than or equal to than the one specified. Seconds and milliseconds are truncated from the argument.",
             "type": {
               "kind": "SCALAR",
               "name": "DateTime",
@@ -19249,7 +19301,31 @@
           },
           {
             "name": "lte",
-            "description": "Filter records with a value that's less or equal than the one specified",
+            "description": "Filter records with a value that's less or equal than the one specified. Seconds and milliseconds are truncated from the argument.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "eq",
+            "description": "Filter records with a value that's within the specified minute range. Seconds and milliseconds are truncated from the argument.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "neq",
+            "description": "Filter records with a value that's outside the specified minute range. Seconds and milliseconds are truncated from the argument.",
             "type": {
               "kind": "SCALAR",
               "name": "DateTime",
@@ -19265,30 +19341,6 @@
             "type": {
               "kind": "SCALAR",
               "name": "BooleanType",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "eq",
-            "description": "Search for records with an exact match (seconds are truncated)",
-            "type": {
-              "kind": "SCALAR",
-              "name": "DateTime",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "neq",
-            "description": "Exclude records with an exact match",
-            "type": {
-              "kind": "SCALAR",
-              "name": "DateTime",
               "ofType": null
             },
             "defaultValue": null,
@@ -19944,6 +19996,18 @@
             "deprecationReason": null
           },
           {
+            "name": "md5",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "UploadMd5Filter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "author",
             "description": null,
             "type": {
@@ -20269,6 +20333,74 @@
       },
       {
         "kind": "INPUT_OBJECT",
+        "name": "UploadMd5Filter",
+        "description": "Specifies how to filter by MD5",
+        "specifiedByUrl": null,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "eq",
+            "description": "Search the asset with the specified MD5",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "neq",
+            "description": "Exclude the asset with the specified MD5",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "in",
+            "description": "Search assets with the specified MD5s",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "notIn",
+            "description": "Search assets that do not have the specified MD5s",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
         "name": "UploadMimeTypeFilter",
         "description": "Specifies how to filter by mime type",
         "specifiedByUrl": null,
@@ -20566,7 +20698,7 @@
         "inputFields": [
           {
             "name": "gt",
-            "description": "Search all assets larger than the specified size",
+            "description": "Search all assets larger than the specified size (in bytes)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -20578,7 +20710,7 @@
           },
           {
             "name": "lt",
-            "description": "Search all assets smaller than the specified size",
+            "description": "Search all assets smaller than the specified size (in bytes)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -20590,7 +20722,7 @@
           },
           {
             "name": "gte",
-            "description": "Search all assets larger or equal to the specified size",
+            "description": "Search all assets larger or equal to the specified size (in bytes)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -20602,7 +20734,7 @@
           },
           {
             "name": "lte",
-            "description": "Search all assets larger or equal to the specified size",
+            "description": "Search all assets larger or equal to the specified size (in bytes)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -20614,7 +20746,7 @@
           },
           {
             "name": "eq",
-            "description": "Search assets with the specified size",
+            "description": "Search assets with the specified size (in bytes)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -20626,7 +20758,7 @@
           },
           {
             "name": "neq",
-            "description": "Search assets that do not have the specified size",
+            "description": "Search assets that do not have the specified size (in bytes)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",

@@ -7,6 +7,24 @@
 // GraphQL query operation: PrimaryPageBySlug
 // ====================================================
 
+export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord_logoImage_responsiveImage {
+  readonly __typename: "ResponsiveImage";
+  readonly aspectRatio: any;
+  readonly height: any;
+  readonly width: any;
+  readonly sizes: string;
+  readonly src: string;
+  readonly srcSet: string;
+  readonly alt: string | null;
+  readonly title: string | null;
+  readonly base64: string | null;
+}
+
+export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord_logoImage {
+  readonly __typename: "FileField";
+  readonly responsiveImage: PrimaryPageBySlug_primaryPage_blocks_BannerRecord_logoImage_responsiveImage | null;
+}
+
 export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord_foregroundImage_responsiveImage {
   readonly __typename: "ResponsiveImage";
   readonly aspectRatio: any;
@@ -48,6 +66,7 @@ export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord {
   readonly id: any;
   readonly title: string | null;
   readonly text: string | null;
+  readonly logoImage: PrimaryPageBySlug_primaryPage_blocks_BannerRecord_logoImage | null;
   readonly foregroundImage: PrimaryPageBySlug_primaryPage_blocks_BannerRecord_foregroundImage | null;
   readonly backgroundImage: PrimaryPageBySlug_primaryPage_blocks_BannerRecord_backgroundImage | null;
   readonly showContactButton: any | null;

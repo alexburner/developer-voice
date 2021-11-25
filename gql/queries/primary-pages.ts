@@ -20,6 +20,21 @@ export const primaryPageBySlug = gql`
           id
           title
           text
+          logoImage {
+            responsiveImage(
+              imgixParams: { fit: clip, maxW: 750, auto: format }
+            ) {
+              aspectRatio
+              height
+              width
+              sizes
+              src
+              srcSet
+              alt
+              title
+              base64
+            }
+          }
           foregroundImage {
             responsiveImage(
               imgixParams: { fit: clip, maxW: 750, auto: format }
