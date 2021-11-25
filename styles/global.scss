@@ -69,6 +69,11 @@ footer.section {
   margin-bottom: 3rem;
 }
 
+// Service icon color hacks
+.ServiceSetRecord .fa-stack i {
+  color: $cam-link;
+}
+
 //
 // More fragile hacks
 //
