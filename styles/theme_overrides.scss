@@ -194,6 +194,9 @@ a {
 }
 
 .navbar {
+  background: $cam-primary;
+  background: linear-gradient(90deg, $cam-secondary 0%, $cam-primary 70%);
+
   &.is-transparent {
     background: none;
   }
