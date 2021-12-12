@@ -26,7 +26,6 @@ export const FormBlock: FC<{
     {groupFields(Array.from(form?.formFields || [])).map((fieldOrGroup) => {
       switch (fieldOrGroup?.__typename) {
         case 'Group': {
-          console.log('Group')
           const group = fieldOrGroup
           return (
             <div key={group.id} className="field is-grouped">
@@ -39,7 +38,6 @@ export const FormBlock: FC<{
           )
         }
         case 'FormFieldRecord': {
-          console.log('Field')
           const field = fieldOrGroup
           return (
             <div
@@ -134,7 +132,5 @@ const groupFields = (fields: Field[]): FieldsAndGroups => {
       }
     }
   }
-  console.log('----------------------------')
-  console.log(output)
   return output
 }
