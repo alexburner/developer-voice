@@ -1,4 +1,5 @@
 import { FC, useState } from 'react'
+import { Collapse } from 'react-collapse'
 import {
   PrimaryPageBySlug_primaryPage_blocks_FaqRecord,
   PrimaryPageBySlug_primaryPage_blocks_FaqRecord_questionsAnswers,
@@ -19,22 +20,32 @@ const QuestionAnswer: FC<{
 }> = ({ qa }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div>
-      <div>
-        {qa.question}
-        <span onClick={() => setIsOpen((prev) => !prev)}>
-          {isOpen ? 'X' : '+'}
-        </span>
+    <div className="pb-5">
+      <div onClick={() => setIsOpen((prev) => !prev)}>
+        <h3 className="title is-3 is-clickable is-unselectable">
+          <span
+            className="pr-2"
+            style={{
+              display: 'inline-block',
+              verticalAlign: 'middle',
+              fontSize: '1.2rem',
+            }}
+          >
+            <i className={isOpen ? 'fas fa-minus' : 'fas fa-plus'} />
+          </span>
+          {qa.question}
+        </h3>
       </div>
-      <div
-        className="content"
-        dangerouslySetInnerHTML={{ __html: qa.answer ?? '' }}
-        style={{
-          overflow: 'hidden',
-          transition: 'max-height 300ms ease-in',
-          maxHeight: isOpen ? '1000px' : '0',
-        }}
-      />
+      <Collapse isOpened={isOpen}>
+        <div
+          className="content pt-4 pl-5 pb-1"
+          dangerouslySetInnerHTML={{ __html: qa.answer ?? '' }}
+          style={{
+            position: 'relative',
+            left: '4px',
+          }}
+        />
+      </Collapse>
     </div>
   )
 }

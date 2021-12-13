@@ -1,6 +1,7 @@
 import '../styles/global.scss'
 import '../styles/nprogress.scss'
 import '../styles/formula-arrows.scss'
+import '../styles/react-collapse.scss'
 
 import { AppComponent } from 'next/dist/next-server/lib/router/router'
 import Head from 'next/head'
