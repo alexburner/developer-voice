@@ -1,3 +1,13 @@
+// Cam colors
+$cam-back: #051327;
+$cam-text: #ffffff;
+$cam-primary: #2871fa;
+$cam-secondary: #671ccd;
+$cam-link: #2cfffe;
+$cam-gray1: #263641;
+$cam-gray2: #3d4d56;
+$cam-gray3: #56636b;
+
 $grey-darkest: $cam-back;
 $grey-darker: lighten($grey-darkest, 6);
 $grey-dark: lighten($grey-darkest, 12);
@@ -87,7 +97,7 @@ $navbar-height: 4rem;
 
 $navbar-background-color: $primary;
 $navbar-item-color: $text;
-$navbar-item-hover-color: $grey-darker;
+$navbar-item-hover-color: $text;
 $navbar-item-hover-background-color: transparent;
 $navbar-item-active-color: $navbar-item-hover-color;
 $navbar-dropdown-arrow: #fff;
@@ -97,7 +107,7 @@ $navbar-dropdown-background-color: $primary;
 $navbar-dropdown-item-hover-color: $grey-lighter;
 $navbar-dropdown-item-hover-background-color: transparent;
 $navbar-dropdown-item-active-background-color: transparent;
-$navbar-dropdown-item-active-color: $link;
+$navbar-dropdown-item-active-color: transparent;
 
 $dropdown-content-background-color: $background;
 $dropdown-item-color: $text;
