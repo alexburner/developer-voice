@@ -8,6 +8,7 @@ import {
 } from '../../gql/types/BlogPostBySlug'
 import { ButtonExternal } from './ButtonExternal'
 import { ButtonInternal } from './ButtonInternal'
+import { FAQ } from './FAQ'
 import { FormBlock } from './FormBlock'
 import { RichText } from './RichText'
 import { Video } from './Video'
@@ -91,6 +92,8 @@ const ColumnBlocks: FC<{
               <ButtonInternal block={block} />
             </div>
           )
+        case 'FaqRecord':
+          return <FAQ key={block.id} block={block} />
         case 'FormBlockRecord':
           return <FormBlock key={block.id} block={block} />
         case 'RichTextRecord':

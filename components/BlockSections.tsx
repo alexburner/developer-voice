@@ -7,6 +7,7 @@ import { PrimaryPageBySlug_primaryPage_blocks } from '../gql/types/PrimaryPageBy
 import { BlogPostBySlug_blogPost_blocks } from '../gql/types/BlogPostBySlug'
 import { Banner } from './blocks/Banner'
 import { ClientSet } from './blocks/ClientSet'
+import { FAQ } from './blocks/FAQ'
 import { FormBlock } from './blocks/FormBlock'
 import { Formula } from './blocks/Formula'
 import { ServiceSet } from './blocks/ServiceSet'
@@ -198,6 +199,15 @@ export const BlockSections: FC<{
                 return null
             }
           }
+
+          case 'FaqRecord':
+            return (
+              <section key={block.id} className="section FaqRecord">
+                <div className={classNames('container', maxClass)}>
+                  <FAQ block={block} />
+                </div>
+              </section>
+            )
 
           case 'FormBlockRecord':
             return (

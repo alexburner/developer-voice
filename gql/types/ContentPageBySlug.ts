@@ -175,6 +175,19 @@ export interface ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_bl
   readonly openInNewTab: any | null;
 }
 
+export interface ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_FaqRecord_questionsAnswers {
+  readonly __typename: "QuestionAnswerRecord";
+  readonly id: any;
+  readonly question: string | null;
+  readonly answer: string | null;
+}
+
+export interface ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_FaqRecord {
+  readonly __typename: "FaqRecord";
+  readonly id: any;
+  readonly questionsAnswers: ReadonlyArray<(ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_FaqRecord_questionsAnswers | null)> | null;
+}
+
 export interface ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_FormBlockRecord_form_formFields {
   readonly __typename: "FormFieldRecord";
   readonly id: any;
@@ -224,7 +237,7 @@ export interface ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_bl
   readonly video: ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_VideoRecord_video | null;
 }
 
-export type ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks = ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ImageSetRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ButtonInternalRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_FormBlockRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_RichTextRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_VideoRecord;
+export type ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks = ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ImageSetRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ButtonInternalRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_FaqRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_FormBlockRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_RichTextRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_VideoRecord;
 
 export interface ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns {
   readonly __typename: "ColumnRecord";
@@ -363,6 +376,19 @@ export interface ContentPageBySlug_contentPage_blocks_ContentLinkSetRecord {
   readonly links: ReadonlyArray<ContentPageBySlug_contentPage_blocks_ContentLinkSetRecord_links>;
 }
 
+export interface ContentPageBySlug_contentPage_blocks_FaqRecord_questionsAnswers {
+  readonly __typename: "QuestionAnswerRecord";
+  readonly id: any;
+  readonly question: string | null;
+  readonly answer: string | null;
+}
+
+export interface ContentPageBySlug_contentPage_blocks_FaqRecord {
+  readonly __typename: "FaqRecord";
+  readonly id: any;
+  readonly questionsAnswers: ReadonlyArray<(ContentPageBySlug_contentPage_blocks_FaqRecord_questionsAnswers | null)> | null;
+}
+
 export interface ContentPageBySlug_contentPage_blocks_FormBlockRecord_form_formFields {
   readonly __typename: "FormFieldRecord";
   readonly id: any;
@@ -438,7 +464,7 @@ export interface ContentPageBySlug_contentPage_blocks_VideoRecord {
   readonly video: ContentPageBySlug_contentPage_blocks_VideoRecord_video | null;
 }
 
-export type ContentPageBySlug_contentPage_blocks = ContentPageBySlug_contentPage_blocks_ButtonExternalRecord | ContentPageBySlug_contentPage_blocks_ButtonInternalRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord | ContentPageBySlug_contentPage_blocks_ContentLinkSetRecord | ContentPageBySlug_contentPage_blocks_FormBlockRecord | ContentPageBySlug_contentPage_blocks_ImageSetRecord | ContentPageBySlug_contentPage_blocks_RichTextRecord | ContentPageBySlug_contentPage_blocks_VideoRecord;
+export type ContentPageBySlug_contentPage_blocks = ContentPageBySlug_contentPage_blocks_ButtonExternalRecord | ContentPageBySlug_contentPage_blocks_ButtonInternalRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord | ContentPageBySlug_contentPage_blocks_ContentLinkSetRecord | ContentPageBySlug_contentPage_blocks_FaqRecord | ContentPageBySlug_contentPage_blocks_FormBlockRecord | ContentPageBySlug_contentPage_blocks_ImageSetRecord | ContentPageBySlug_contentPage_blocks_RichTextRecord | ContentPageBySlug_contentPage_blocks_VideoRecord;
 
 export interface ContentPageBySlug_contentPage__seoMetaTags {
   readonly __typename: "Tag";

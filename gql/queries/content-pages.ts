@@ -140,6 +140,14 @@ export const contentPageBySlug = gql`
                 align
                 openInNewTab
               }
+              ... on FaqRecord {
+                id
+                questionsAnswers {
+                  id
+                  question
+                  answer
+                }
+              }
               ... on FormBlockRecord {
                 id
                 form {
@@ -272,6 +280,14 @@ export const contentPageBySlug = gql`
                 }
               }
             }
+          }
+        }
+        ... on FaqRecord {
+          id
+          questionsAnswers {
+            id
+            question
+            answer
           }
         }
         ... on FormBlockRecord {

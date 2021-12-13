@@ -109,6 +109,19 @@ export interface BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_B
   readonly openInNewTab: any | null;
 }
 
+export interface BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_FaqRecord_questionsAnswers {
+  readonly __typename: "QuestionAnswerRecord";
+  readonly id: any;
+  readonly question: string | null;
+  readonly answer: string | null;
+}
+
+export interface BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_FaqRecord {
+  readonly __typename: "FaqRecord";
+  readonly id: any;
+  readonly questionsAnswers: ReadonlyArray<(BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_FaqRecord_questionsAnswers | null)> | null;
+}
+
 export interface BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_FormBlockRecord_form_formFields {
   readonly __typename: "FormFieldRecord";
   readonly id: any;
@@ -158,7 +171,7 @@ export interface BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_V
   readonly video: BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_VideoRecord_video | null;
 }
 
-export type BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks = BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ImageSetRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ButtonInternalRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_FormBlockRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_RichTextRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_VideoRecord;
+export type BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks = BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ImageSetRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ButtonInternalRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_FaqRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_FormBlockRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_RichTextRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_VideoRecord;
 
 export interface BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns {
   readonly __typename: "ColumnRecord";
@@ -297,6 +310,19 @@ export interface BlogPostBySlug_blogPost_blocks_ContentLinkSetRecord {
   readonly links: ReadonlyArray<BlogPostBySlug_blogPost_blocks_ContentLinkSetRecord_links>;
 }
 
+export interface BlogPostBySlug_blogPost_blocks_FaqRecord_questionsAnswers {
+  readonly __typename: "QuestionAnswerRecord";
+  readonly id: any;
+  readonly question: string | null;
+  readonly answer: string | null;
+}
+
+export interface BlogPostBySlug_blogPost_blocks_FaqRecord {
+  readonly __typename: "FaqRecord";
+  readonly id: any;
+  readonly questionsAnswers: ReadonlyArray<(BlogPostBySlug_blogPost_blocks_FaqRecord_questionsAnswers | null)> | null;
+}
+
 export interface BlogPostBySlug_blogPost_blocks_FormBlockRecord_form_formFields {
   readonly __typename: "FormFieldRecord";
   readonly id: any;
@@ -372,7 +398,7 @@ export interface BlogPostBySlug_blogPost_blocks_VideoRecord {
   readonly video: BlogPostBySlug_blogPost_blocks_VideoRecord_video | null;
 }
 
-export type BlogPostBySlug_blogPost_blocks = BlogPostBySlug_blogPost_blocks_ButtonExternalRecord | BlogPostBySlug_blogPost_blocks_ButtonInternalRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord | BlogPostBySlug_blogPost_blocks_ContentLinkSetRecord | BlogPostBySlug_blogPost_blocks_FormBlockRecord | BlogPostBySlug_blogPost_blocks_ImageSetRecord | BlogPostBySlug_blogPost_blocks_RichTextRecord | BlogPostBySlug_blogPost_blocks_VideoRecord;
+export type BlogPostBySlug_blogPost_blocks = BlogPostBySlug_blogPost_blocks_ButtonExternalRecord | BlogPostBySlug_blogPost_blocks_ButtonInternalRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord | BlogPostBySlug_blogPost_blocks_ContentLinkSetRecord | BlogPostBySlug_blogPost_blocks_FaqRecord | BlogPostBySlug_blogPost_blocks_FormBlockRecord | BlogPostBySlug_blogPost_blocks_ImageSetRecord | BlogPostBySlug_blogPost_blocks_RichTextRecord | BlogPostBySlug_blogPost_blocks_VideoRecord;
 
 export interface BlogPostBySlug_blogPost_categories {
   readonly __typename: "CategoryRecord";

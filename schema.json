@@ -361,6 +361,11 @@
           },
           {
             "kind": "OBJECT",
+            "name": "FaqRecord",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
             "name": "FormBlockRecord",
             "ofType": null
           },
@@ -3424,6 +3429,11 @@
           },
           {
             "kind": "OBJECT",
+            "name": "FaqRecord",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
             "name": "FormBlockRecord",
             "ofType": null
           },
@@ -4764,6 +4774,11 @@
           {
             "kind": "OBJECT",
             "name": "ContentLinkSetRecord",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "FaqRecord",
             "ofType": null
           },
           {
@@ -6619,6 +6634,247 @@
               "kind": "SCALAR",
               "name": "String",
               "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "FaqRecord",
+        "description": "Record of type FAQ (faq)",
+        "specifiedByUrl": null,
+        "fields": [
+          {
+            "name": "_createdAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_firstPublishedAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_isValid",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "BooleanType",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_modelApiKey",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_publicationScheduledAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_publishedAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_seoMetaTags",
+            "description": "SEO meta tags",
+            "args": [
+              {
+                "name": "locale",
+                "description": "The locale to use to fetch the field's content",
+                "type": {
+                  "kind": "ENUM",
+                  "name": "SiteLocale",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "Tag",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_status",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "ENUM",
+                "name": "ItemStatus",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_unpublishingScheduledAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_updatedAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "id",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ItemId",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "questionsAnswers",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "QuestionAnswerRecord",
+                "ofType": null
+              }
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -9766,7 +10022,7 @@
         "inputFields": [
           {
             "name": "ar",
-            "description": "Aspect Ratio\n\nSpecifies an aspect ratio to maintain when resizing and cropping the image\n\nDepends on: `fit=crop`",
+            "description": "Aspect Ratio\n\nSpecifies an aspect ratio to maintain when resizing and cropping the image\n\nDepends on: `fit=crop`\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/size/ar)",
             "type": {
               "kind": "SCALAR",
               "name": "String",
@@ -9994,7 +10250,7 @@
           },
           {
             "name": "borderBottom",
-            "description": "Border Bottom\n\nSets bottom border of an image.\n\nDepends on: `border`",
+            "description": "Border Bottom\n\nSets bottom border of an image.\n\nDepends on: `border`\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/border-and-padding/border-bottom)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -10006,7 +10262,7 @@
           },
           {
             "name": "borderLeft",
-            "description": "Border Left\n\nSets left border of an image.\n\nDepends on: `border`",
+            "description": "Border Left\n\nSets left border of an image.\n\nDepends on: `border`\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/border-and-padding/border-left)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -10042,7 +10298,7 @@
           },
           {
             "name": "borderRight",
-            "description": "Border Right\n\nSets right border of an image.\n\nDepends on: `border`",
+            "description": "Border Right\n\nSets right border of an image.\n\nDepends on: `border`\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/border-and-padding/border-right)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -10054,7 +10310,7 @@
           },
           {
             "name": "borderTop",
-            "description": "Border Top\n\nSets top border of an image.\n\nDepends on: `border`",
+            "description": "Border Top\n\nSets top border of an image.\n\nDepends on: `border`\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/border-and-padding/border-top)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -10421,7 +10677,7 @@
             "description": "Focal Point Zoom\n\nSets the relative zoom value for the focal point of an image\n\nDepends on: `fit=crop`, `crop=focalpoint`\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/focalpoint-crop/fp-z)",
             "type": {
               "kind": "SCALAR",
-              "name": "IntType",
+              "name": "FloatType",
               "ofType": null
             },
             "defaultValue": null,
@@ -10525,6 +10781,18 @@
             "deprecationReason": null
           },
           {
+            "name": "iptc",
+            "description": "Iptc Passthrough\n\nDetermine if IPTC data should be passed for JPEG images.",
+            "type": {
+              "kind": "ENUM",
+              "name": "ImgixParamsIptc",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "lossless",
             "description": "Lossless Compression\n\nSpecifies that the output image should be a lossless variant.\n\nDepends on: `fm=webp`, `fm=jxr`\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/format/lossless)",
             "type": {
@@ -10617,11 +10885,35 @@
             "deprecationReason": null
           },
           {
+            "name": "markRot",
+            "description": "Watermark Rotation\n\nRotates a watermark or tiled watermarks by a specified number of degrees.\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/watermark/mark-rot)",
+            "type": {
+              "kind": "SCALAR",
+              "name": "FloatType",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "markScale",
             "description": "Watermark Scale\n\nAdjusts the scale of the watermark image.\n\nDepends on: `mark`\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/watermark/mark-scale)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "markTile",
+            "description": "Watermark Tile\n\nAdds tiled watermark.\n\nDepends on: `mark`\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/watermark/mark-tile)",
+            "type": {
+              "kind": "ENUM",
+              "name": "ImgixParamsMarkTile",
               "ofType": null
             },
             "defaultValue": null,
@@ -10798,7 +11090,7 @@
           },
           {
             "name": "padBottom",
-            "description": "Padding Bottom\n\nSets bottom padding of an image.",
+            "description": "Padding Bottom\n\nSets bottom padding of an image.\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/border-and-padding/pad-bottom)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -10810,7 +11102,7 @@
           },
           {
             "name": "padLeft",
-            "description": "Padding Left\n\nSets left padding of an image.",
+            "description": "Padding Left\n\nSets left padding of an image.\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/border-and-padding/pad-left)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -10822,7 +11114,7 @@
           },
           {
             "name": "padRight",
-            "description": "Padding Right\n\nSets right padding of an image.",
+            "description": "Padding Right\n\nSets right padding of an image.\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/border-and-padding/pad-right)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -10834,7 +11126,7 @@
           },
           {
             "name": "padTop",
-            "description": "Padding Top\n\nSets top padding of an image.",
+            "description": "Padding Top\n\nSets top padding of an image.\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/border-and-padding/pad-top)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -10858,7 +11150,7 @@
           },
           {
             "name": "page",
-            "description": "Pdf Page Number\n\nSelects a page from a PDF for display.\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/pdf-page-number)",
+            "description": "Pdf Page Number\n\nSelects a page from a PDF for display.\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/pdf/page)",
             "type": {
               "kind": "SCALAR",
               "name": "IntType",
@@ -10874,6 +11166,18 @@
             "type": {
               "kind": "ENUM",
               "name": "ImgixParamsPalette",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "pdfAnnotation",
+            "description": "Pdf Annotation\n\nEnables or disables PDF annotation.\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/pdf/pdf-annotation)",
+            "type": {
+              "kind": "SCALAR",
+              "name": "BooleanType",
               "ofType": null
             },
             "defaultValue": null,
@@ -10990,7 +11294,7 @@
           },
           {
             "name": "transparency",
-            "description": "Transparency\n\nAdds checkerboard behind images which support transparency.",
+            "description": "Transparency\n\nAdds checkerboard behind images which support transparency.\n\n[Open Imgix reference »](https://docs.imgix.com/apis/url/fill/transparency)",
             "type": {
               "kind": "ENUM",
               "name": "ImgixParamsTransparency",
@@ -11941,6 +12245,42 @@
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
+          },
+          {
+            "name": "blurhash",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "avif",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "ImgixParamsIptc",
+        "description": null,
+        "specifiedByUrl": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "allow",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "block",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
           }
         ],
         "possibleTypes": null
@@ -12028,6 +12368,24 @@
           },
           {
             "name": "scale",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "ImgixParamsMarkTile",
+        "description": null,
+        "specifiedByUrl": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "grid",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -13341,6 +13699,11 @@
           {
             "kind": "OBJECT",
             "name": "ContentLinkSetRecord",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "FaqRecord",
             "ofType": null
           },
           {
@@ -16362,6 +16725,268 @@
               "kind": "OBJECT",
               "name": "FileField",
               "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "QuestionAnswerRecord",
+        "description": "Record of type Question + Answer (question_answer)",
+        "specifiedByUrl": null,
+        "fields": [
+          {
+            "name": "_createdAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_firstPublishedAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_isValid",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "BooleanType",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_modelApiKey",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_publicationScheduledAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_publishedAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_seoMetaTags",
+            "description": "SEO meta tags",
+            "args": [
+              {
+                "name": "locale",
+                "description": "The locale to use to fetch the field's content",
+                "type": {
+                  "kind": "ENUM",
+                  "name": "SiteLocale",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "Tag",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_status",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "ENUM",
+                "name": "ItemStatus",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_unpublishingScheduledAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "_updatedAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "answer",
+            "description": null,
+            "args": [
+              {
+                "name": "markdown",
+                "description": "Process content as markdown",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "id",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ItemId",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "question",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
             },
             "isDeprecated": false,
             "deprecationReason": null

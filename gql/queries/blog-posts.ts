@@ -246,6 +246,14 @@ export const blogPostBySlug = gql`
                 align
                 openInNewTab
               }
+              ... on FaqRecord {
+                id
+                questionsAnswers {
+                  id
+                  question
+                  answer
+                }
+              }
               ... on FormBlockRecord {
                 id
                 form {
@@ -378,6 +386,14 @@ export const blogPostBySlug = gql`
                 }
               }
             }
+          }
+        }
+        ... on FaqRecord {
+          id
+          questionsAnswers {
+            id
+            question
+            answer
           }
         }
         ... on FormBlockRecord {

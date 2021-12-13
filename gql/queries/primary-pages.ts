@@ -263,6 +263,14 @@ export const primaryPageBySlug = gql`
                 align
                 openInNewTab
               }
+              ... on FaqRecord {
+                id
+                questionsAnswers {
+                  id
+                  question
+                  answer
+                }
+              }
               ... on FormBlockRecord {
                 id
                 form {
@@ -303,6 +311,14 @@ export const primaryPageBySlug = gql`
             width
           }
           verticallyCenterAcrossColumns
+        }
+        ... on FaqRecord {
+          id
+          questionsAnswers {
+            id
+            question
+            answer
+          }
         }
         ... on FormBlockRecord {
           id
