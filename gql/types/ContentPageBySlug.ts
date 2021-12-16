@@ -73,6 +73,14 @@ export interface ContentPageBySlug_contentPage_children {
   readonly previewImage: ContentPageBySlug_contentPage_children_previewImage | null;
 }
 
+export interface ContentPageBySlug_contentPage_blocks_ButtonAnchorRecord {
+  readonly __typename: "ButtonAnchorRecord";
+  readonly id: any;
+  readonly label: string | null;
+  readonly anchorId: string | null;
+  readonly align: string | null;
+}
+
 export interface ContentPageBySlug_contentPage_blocks_ButtonExternalRecord {
   readonly __typename: "ButtonExternalRecord";
   readonly id: any;
@@ -133,6 +141,14 @@ export interface ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_im
 
 export interface ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ImageSetRecord {
   readonly __typename: "ImageSetRecord";
+}
+
+export interface ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ButtonAnchorRecord {
+  readonly __typename: "ButtonAnchorRecord";
+  readonly id: any;
+  readonly label: string | null;
+  readonly anchorId: string | null;
+  readonly align: string | null;
 }
 
 export interface ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord {
@@ -237,7 +253,7 @@ export interface ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_bl
   readonly video: ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_VideoRecord_video | null;
 }
 
-export type ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks = ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ImageSetRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ButtonInternalRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_FaqRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_FormBlockRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_RichTextRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_VideoRecord;
+export type ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks = ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ImageSetRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ButtonAnchorRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_ButtonInternalRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_FaqRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_FormBlockRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_RichTextRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns_blocks_VideoRecord;
 
 export interface ContentPageBySlug_contentPage_blocks_ColumnRowRecord_columns {
   readonly __typename: "ColumnRecord";
@@ -447,6 +463,12 @@ export interface ContentPageBySlug_contentPage_blocks_RichTextRecord {
   readonly richText: string | null;
 }
 
+export interface ContentPageBySlug_contentPage_blocks_ScrollAnchorRecord {
+  readonly __typename: "ScrollAnchorRecord";
+  readonly id: any;
+  readonly anchorId: string | null;
+}
+
 export interface ContentPageBySlug_contentPage_blocks_VideoRecord_video {
   readonly __typename: "VideoField";
   readonly height: any | null;
@@ -464,7 +486,7 @@ export interface ContentPageBySlug_contentPage_blocks_VideoRecord {
   readonly video: ContentPageBySlug_contentPage_blocks_VideoRecord_video | null;
 }
 
-export type ContentPageBySlug_contentPage_blocks = ContentPageBySlug_contentPage_blocks_ButtonExternalRecord | ContentPageBySlug_contentPage_blocks_ButtonInternalRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord | ContentPageBySlug_contentPage_blocks_ContentLinkSetRecord | ContentPageBySlug_contentPage_blocks_FaqRecord | ContentPageBySlug_contentPage_blocks_FormBlockRecord | ContentPageBySlug_contentPage_blocks_ImageSetRecord | ContentPageBySlug_contentPage_blocks_RichTextRecord | ContentPageBySlug_contentPage_blocks_VideoRecord;
+export type ContentPageBySlug_contentPage_blocks = ContentPageBySlug_contentPage_blocks_ButtonAnchorRecord | ContentPageBySlug_contentPage_blocks_ButtonExternalRecord | ContentPageBySlug_contentPage_blocks_ButtonInternalRecord | ContentPageBySlug_contentPage_blocks_ColumnRowRecord | ContentPageBySlug_contentPage_blocks_ContentLinkSetRecord | ContentPageBySlug_contentPage_blocks_FaqRecord | ContentPageBySlug_contentPage_blocks_FormBlockRecord | ContentPageBySlug_contentPage_blocks_ImageSetRecord | ContentPageBySlug_contentPage_blocks_RichTextRecord | ContentPageBySlug_contentPage_blocks_ScrollAnchorRecord | ContentPageBySlug_contentPage_blocks_VideoRecord;
 
 export interface ContentPageBySlug_contentPage__seoMetaTags {
   readonly __typename: "Tag";

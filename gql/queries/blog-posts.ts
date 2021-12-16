@@ -167,6 +167,12 @@ export const blogPostBySlug = gql`
       date
       blocks {
         __typename
+        ... on ButtonAnchorRecord {
+          id
+          label
+          anchorId
+          align
+        }
         ... on ButtonExternalRecord {
           id
           label
@@ -218,6 +224,12 @@ export const blogPostBySlug = gql`
             text
             blocks {
               __typename
+              ... on ButtonAnchorRecord {
+                id
+                label
+                anchorId
+                align
+              }
               ... on ButtonExternalRecord {
                 id
                 label
@@ -438,6 +450,10 @@ export const blogPostBySlug = gql`
         ... on RichTextRecord {
           id
           richText
+        }
+        ... on ScrollAnchorRecord {
+          id
+          anchorId
         }
         ... on VideoRecord {
           id

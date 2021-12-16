@@ -61,6 +61,56 @@ export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord_backgroundIma
   readonly responsiveImage: PrimaryPageBySlug_primaryPage_blocks_BannerRecord_backgroundImage_responsiveImage | null;
 }
 
+export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonAnchorRecord {
+  readonly __typename: "ButtonAnchorRecord";
+  readonly id: any;
+  readonly label: string | null;
+  readonly anchorId: string | null;
+  readonly align: string | null;
+}
+
+export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonExternalRecord {
+  readonly __typename: "ButtonExternalRecord";
+  readonly id: any;
+  readonly label: string | null;
+  readonly url: string | null;
+  readonly align: string | null;
+  readonly openInNewTab: any | null;
+}
+
+export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonInternalRecord_link_ContentPageRecord {
+  readonly __typename: "ContentPageRecord";
+  readonly slug: string | null;
+}
+
+export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonInternalRecord_link_BlogPostRecord {
+  readonly __typename: "BlogPostRecord";
+  readonly slug: string | null;
+}
+
+export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonInternalRecord_link_PrimaryPageRecord {
+  readonly __typename: "PrimaryPageRecord";
+  readonly slug: string | null;
+}
+
+export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonInternalRecord_link_DownloadPageRecord {
+  readonly __typename: "DownloadPageRecord";
+  readonly slug: string | null;
+}
+
+export type PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonInternalRecord_link = PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonInternalRecord_link_ContentPageRecord | PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonInternalRecord_link_BlogPostRecord | PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonInternalRecord_link_PrimaryPageRecord | PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonInternalRecord_link_DownloadPageRecord;
+
+export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonInternalRecord {
+  readonly __typename: "ButtonInternalRecord";
+  readonly id: any;
+  readonly label: string | null;
+  readonly link: PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonInternalRecord_link | null;
+  readonly align: string | null;
+  readonly openInNewTab: any | null;
+}
+
+export type PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons = PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonAnchorRecord | PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonExternalRecord | PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons_ButtonInternalRecord;
+
 export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord {
   readonly __typename: "BannerRecord";
   readonly id: any;
@@ -69,8 +119,15 @@ export interface PrimaryPageBySlug_primaryPage_blocks_BannerRecord {
   readonly logoImage: PrimaryPageBySlug_primaryPage_blocks_BannerRecord_logoImage | null;
   readonly foregroundImage: PrimaryPageBySlug_primaryPage_blocks_BannerRecord_foregroundImage | null;
   readonly backgroundImage: PrimaryPageBySlug_primaryPage_blocks_BannerRecord_backgroundImage | null;
-  readonly showContactButton: any | null;
-  readonly contactButtonLabel: string | null;
+  readonly buttons: ReadonlyArray<(PrimaryPageBySlug_primaryPage_blocks_BannerRecord_buttons | null)> | null;
+}
+
+export interface PrimaryPageBySlug_primaryPage_blocks_ButtonAnchorRecord {
+  readonly __typename: "ButtonAnchorRecord";
+  readonly id: any;
+  readonly label: string | null;
+  readonly anchorId: string | null;
+  readonly align: string | null;
 }
 
 export interface PrimaryPageBySlug_primaryPage_blocks_ButtonExternalRecord {
@@ -285,6 +342,14 @@ export interface PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_bl
   readonly __typename: "ImageSetRecord";
 }
 
+export interface PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_ButtonAnchorRecord {
+  readonly __typename: "ButtonAnchorRecord";
+  readonly id: any;
+  readonly label: string | null;
+  readonly anchorId: string | null;
+  readonly align: string | null;
+}
+
 export interface PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord {
   readonly __typename: "ButtonExternalRecord";
   readonly id: any;
@@ -387,7 +452,7 @@ export interface PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_bl
   readonly video: PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_VideoRecord_video | null;
 }
 
-export type PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks = PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_ImageSetRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_ButtonInternalRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_FaqRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_FormBlockRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_RichTextRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_VideoRecord;
+export type PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks = PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_ImageSetRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_ButtonAnchorRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_ButtonInternalRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_FaqRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_FormBlockRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_RichTextRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns_blocks_VideoRecord;
 
 export interface PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord_columns {
   readonly __typename: "ColumnRecord";
@@ -543,6 +608,12 @@ export interface PrimaryPageBySlug_primaryPage_blocks_RichTextRecord {
   readonly richText: string | null;
 }
 
+export interface PrimaryPageBySlug_primaryPage_blocks_ScrollAnchorRecord {
+  readonly __typename: "ScrollAnchorRecord";
+  readonly id: any;
+  readonly anchorId: string | null;
+}
+
 export interface PrimaryPageBySlug_primaryPage_blocks_ServiceSetRecord_services {
   readonly __typename: "ServiceRecord";
   readonly id: any;
@@ -620,7 +691,7 @@ export interface PrimaryPageBySlug_primaryPage_blocks_ViewMoreLinkRecord {
   readonly url: string | null;
 }
 
-export type PrimaryPageBySlug_primaryPage_blocks = PrimaryPageBySlug_primaryPage_blocks_BannerRecord | PrimaryPageBySlug_primaryPage_blocks_ButtonExternalRecord | PrimaryPageBySlug_primaryPage_blocks_ButtonInternalRecord | PrimaryPageBySlug_primaryPage_blocks_ClientSetRecord | PrimaryPageBySlug_primaryPage_blocks_ContentLinkSetRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord | PrimaryPageBySlug_primaryPage_blocks_FaqRecord | PrimaryPageBySlug_primaryPage_blocks_FormBlockRecord | PrimaryPageBySlug_primaryPage_blocks_FormulaRecord | PrimaryPageBySlug_primaryPage_blocks_ImageSetRecord | PrimaryPageBySlug_primaryPage_blocks_RichTextRecord | PrimaryPageBySlug_primaryPage_blocks_ServiceSetRecord | PrimaryPageBySlug_primaryPage_blocks_TeamRecord | PrimaryPageBySlug_primaryPage_blocks_TitleTextRecord | PrimaryPageBySlug_primaryPage_blocks_VideoRecord | PrimaryPageBySlug_primaryPage_blocks_ViewMoreLinkRecord;
+export type PrimaryPageBySlug_primaryPage_blocks = PrimaryPageBySlug_primaryPage_blocks_BannerRecord | PrimaryPageBySlug_primaryPage_blocks_ButtonAnchorRecord | PrimaryPageBySlug_primaryPage_blocks_ButtonExternalRecord | PrimaryPageBySlug_primaryPage_blocks_ButtonInternalRecord | PrimaryPageBySlug_primaryPage_blocks_ClientSetRecord | PrimaryPageBySlug_primaryPage_blocks_ContentLinkSetRecord | PrimaryPageBySlug_primaryPage_blocks_ColumnRowRecord | PrimaryPageBySlug_primaryPage_blocks_FaqRecord | PrimaryPageBySlug_primaryPage_blocks_FormBlockRecord | PrimaryPageBySlug_primaryPage_blocks_FormulaRecord | PrimaryPageBySlug_primaryPage_blocks_ImageSetRecord | PrimaryPageBySlug_primaryPage_blocks_RichTextRecord | PrimaryPageBySlug_primaryPage_blocks_ScrollAnchorRecord | PrimaryPageBySlug_primaryPage_blocks_ServiceSetRecord | PrimaryPageBySlug_primaryPage_blocks_TeamRecord | PrimaryPageBySlug_primaryPage_blocks_TitleTextRecord | PrimaryPageBySlug_primaryPage_blocks_VideoRecord | PrimaryPageBySlug_primaryPage_blocks_ViewMoreLinkRecord;
 
 export interface PrimaryPageBySlug_primaryPage__seoMetaTags {
   readonly __typename: "Tag";

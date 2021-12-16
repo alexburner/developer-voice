@@ -7,6 +7,14 @@
 // GraphQL query operation: BlogPostBySlug
 // ====================================================
 
+export interface BlogPostBySlug_blogPost_blocks_ButtonAnchorRecord {
+  readonly __typename: "ButtonAnchorRecord";
+  readonly id: any;
+  readonly label: string | null;
+  readonly anchorId: string | null;
+  readonly align: string | null;
+}
+
 export interface BlogPostBySlug_blogPost_blocks_ButtonExternalRecord {
   readonly __typename: "ButtonExternalRecord";
   readonly id: any;
@@ -67,6 +75,14 @@ export interface BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_image {
 
 export interface BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ImageSetRecord {
   readonly __typename: "ImageSetRecord";
+}
+
+export interface BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ButtonAnchorRecord {
+  readonly __typename: "ButtonAnchorRecord";
+  readonly id: any;
+  readonly label: string | null;
+  readonly anchorId: string | null;
+  readonly align: string | null;
 }
 
 export interface BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord {
@@ -171,7 +187,7 @@ export interface BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_V
   readonly video: BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_VideoRecord_video | null;
 }
 
-export type BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks = BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ImageSetRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ButtonInternalRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_FaqRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_FormBlockRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_RichTextRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_VideoRecord;
+export type BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks = BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ImageSetRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ButtonAnchorRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ButtonExternalRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_ButtonInternalRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_FaqRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_FormBlockRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_RichTextRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns_blocks_VideoRecord;
 
 export interface BlogPostBySlug_blogPost_blocks_ColumnRowRecord_columns {
   readonly __typename: "ColumnRecord";
@@ -381,6 +397,12 @@ export interface BlogPostBySlug_blogPost_blocks_RichTextRecord {
   readonly richText: string | null;
 }
 
+export interface BlogPostBySlug_blogPost_blocks_ScrollAnchorRecord {
+  readonly __typename: "ScrollAnchorRecord";
+  readonly id: any;
+  readonly anchorId: string | null;
+}
+
 export interface BlogPostBySlug_blogPost_blocks_VideoRecord_video {
   readonly __typename: "VideoField";
   readonly height: any | null;
@@ -398,7 +420,7 @@ export interface BlogPostBySlug_blogPost_blocks_VideoRecord {
   readonly video: BlogPostBySlug_blogPost_blocks_VideoRecord_video | null;
 }
 
-export type BlogPostBySlug_blogPost_blocks = BlogPostBySlug_blogPost_blocks_ButtonExternalRecord | BlogPostBySlug_blogPost_blocks_ButtonInternalRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord | BlogPostBySlug_blogPost_blocks_ContentLinkSetRecord | BlogPostBySlug_blogPost_blocks_FaqRecord | BlogPostBySlug_blogPost_blocks_FormBlockRecord | BlogPostBySlug_blogPost_blocks_ImageSetRecord | BlogPostBySlug_blogPost_blocks_RichTextRecord | BlogPostBySlug_blogPost_blocks_VideoRecord;
+export type BlogPostBySlug_blogPost_blocks = BlogPostBySlug_blogPost_blocks_ButtonAnchorRecord | BlogPostBySlug_blogPost_blocks_ButtonExternalRecord | BlogPostBySlug_blogPost_blocks_ButtonInternalRecord | BlogPostBySlug_blogPost_blocks_ColumnRowRecord | BlogPostBySlug_blogPost_blocks_ContentLinkSetRecord | BlogPostBySlug_blogPost_blocks_FaqRecord | BlogPostBySlug_blogPost_blocks_FormBlockRecord | BlogPostBySlug_blogPost_blocks_ImageSetRecord | BlogPostBySlug_blogPost_blocks_RichTextRecord | BlogPostBySlug_blogPost_blocks_ScrollAnchorRecord | BlogPostBySlug_blogPost_blocks_VideoRecord;
 
 export interface BlogPostBySlug_blogPost_categories {
   readonly __typename: "CategoryRecord";

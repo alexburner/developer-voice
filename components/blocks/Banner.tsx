@@ -2,7 +2,9 @@ import { FC } from 'react'
 import { Image, ResponsiveImageType } from 'react-datocms'
 
 import { PrimaryPageBySlug_primaryPage_blocks_BannerRecord } from '../../gql/types/PrimaryPageBySlug'
-import { scrollToContact } from '../../util/scrollToContact'
+import { ButtonAnchor } from './ButtonAnchor'
+import { ButtonExternal } from './ButtonExternal'
+import { ButtonInternal } from './ButtonInternal'
 
 export const Banner: FC<{
   block: PrimaryPageBySlug_primaryPage_blocks_BannerRecord
@@ -22,13 +24,21 @@ export const Banner: FC<{
           dangerouslySetInnerHTML={{ __html: block.text }}
         />
       )}
-      {block.showContactButton === true && (
-        <button
-          className="button is-primary is-medium mt-4"
-          onClick={scrollToContact}
-        >
-          {block.contactButtonLabel}
-        </button>
+      {Boolean(block.buttons?.length) && (
+        <div className="mt-4">
+          {block.buttons?.map((button) => {
+            switch (button?.__typename) {
+              case 'ButtonExternalRecord':
+                return <ButtonExternal key={button.id} block={button} />
+              case 'ButtonInternalRecord':
+                return <ButtonInternal key={button.id} block={button} />
+              case 'ButtonAnchorRecord':
+                return <ButtonAnchor key={button.id} block={button} />
+              default:
+                return null
+            }
+          })}
+        </div>
       )}
     </div>
     {block.foregroundImage && (

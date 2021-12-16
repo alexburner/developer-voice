@@ -25,6 +25,7 @@ import { CardRows } from './content-links/CardRows'
 import { ThumbColumns } from './content-links/ThumbColumns'
 import { ThumbRows } from './content-links/ThumbRows'
 import { HeroBanner } from './content-links/HeroBanner'
+import { ScrollAnchor } from './blocks/ScrollAnchor'
 
 export const BlockSections: FC<{
   containerMax?: 'desktop' | 'widescreen'
@@ -244,6 +245,9 @@ export const BlockSections: FC<{
                 </div>
               </section>
             )
+
+          case 'ScrollAnchorRecord':
+            return <ScrollAnchor key={block.id} block={block} />
 
           case 'ServiceSetRecord':
             return (

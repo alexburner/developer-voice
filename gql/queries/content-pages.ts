@@ -61,6 +61,12 @@ export const contentPageBySlug = gql`
       }
       blocks {
         __typename
+        ... on ButtonAnchorRecord {
+          id
+          label
+          anchorId
+          align
+        }
         ... on ButtonExternalRecord {
           id
           label
@@ -112,6 +118,12 @@ export const contentPageBySlug = gql`
             text
             blocks {
               __typename
+              ... on ButtonAnchorRecord {
+                id
+                label
+                anchorId
+                align
+              }
               ... on ButtonExternalRecord {
                 id
                 label
@@ -332,6 +344,10 @@ export const contentPageBySlug = gql`
         ... on RichTextRecord {
           id
           richText
+        }
+        ... on ScrollAnchorRecord {
+          id
+          anchorId
         }
         ... on VideoRecord {
           id

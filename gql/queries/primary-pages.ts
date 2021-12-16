@@ -65,10 +65,51 @@ export const primaryPageBySlug = gql`
               base64
             }
           }
-          showContactButton
-          contactButtonLabel
+          buttons {
+            __typename
+            ... on ButtonAnchorRecord {
+              id
+              label
+              anchorId
+              align
+            }
+            ... on ButtonExternalRecord {
+              id
+              label
+              url
+              align
+              openInNewTab
+            }
+            ... on ButtonInternalRecord {
+              id
+              label
+              link {
+                __typename
+                ... on ContentPageRecord {
+                  slug
+                }
+                ... on BlogPostRecord {
+                  slug
+                }
+                ... on PrimaryPageRecord {
+                  slug
+                }
+                ... on DownloadPageRecord {
+                  slug
+                }
+              }
+              align
+              openInNewTab
+            }
+          }
         }
         __typename
+        ... on ButtonAnchorRecord {
+          id
+          label
+          anchorId
+          align
+        }
         ... on ButtonExternalRecord {
           id
           label
@@ -235,6 +276,12 @@ export const primaryPageBySlug = gql`
             text
             blocks {
               __typename
+              ... on ButtonAnchorRecord {
+                id
+                label
+                anchorId
+                align
+              }
               ... on ButtonExternalRecord {
                 id
                 label
@@ -413,6 +460,10 @@ export const primaryPageBySlug = gql`
         ... on RichTextRecord {
           id
           richText
+        }
+        ... on ScrollAnchorRecord {
+          id
+          anchorId
         }
         ... on ServiceSetRecord {
           id
