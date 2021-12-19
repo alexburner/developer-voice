@@ -7,5 +7,8 @@ const HEADER_HEIGHT_ADJUSTMENT = { position: 'relative', top: '-60px' } as const
 export const ScrollAnchor: FC<{
   block: BlogPostBySlug_blogPost_blocks_ScrollAnchorRecord
 }> = ({ block }) => (
-  <div style={HEADER_HEIGHT_ADJUSTMENT} id={block.anchorId ?? ''} />
+  <div
+    style={HEADER_HEIGHT_ADJUSTMENT}
+    id={block.anchorId?.slice(1) ?? undefined}
+  />
 )

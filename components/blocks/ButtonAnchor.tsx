@@ -4,17 +4,17 @@ import { BlogPostBySlug_blogPost_blocks_ButtonAnchorRecord } from '../../gql/typ
 export const ButtonAnchor: FC<{
   block: BlogPostBySlug_blogPost_blocks_ButtonAnchorRecord
 }> = ({ block }) => {
-  const anchorId = block.anchorId ?? ''
-  const anchorHash = `#${anchorId}`
+  const anchorId = block.anchorId ?? '#'
+  const elementId = anchorId.slice(1)
   return (
     <a
       className="button is-primary is-medium"
-      href={anchorHash}
+      href={anchorId}
       onClick={(e) => {
         e.preventDefault()
-        window.history.replaceState(null, '', anchorHash)
+        window.history.replaceState(null, '', anchorId)
         document
-          .getElementById(anchorId)
+          .getElementById(elementId)
           ?.scrollIntoView({ behavior: 'smooth' })
       }}
     >
