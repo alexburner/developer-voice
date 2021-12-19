@@ -4,6 +4,7 @@ import { createSubscription, Subscription } from '../util/dato-cms'
 import { primaryPageBySlug } from '../gql/queries/primary-pages'
 import { PrimaryPageBySlug } from '../gql/types/PrimaryPageBySlug'
 import { PrimaryPage } from '../components/pages/PrimaryPage'
+import { ROOT_SLUG } from '../util/url'
 
 interface PageProps {
   subscription: Subscription<PrimaryPageBySlug>
@@ -19,7 +20,7 @@ export const getStaticProps: GetStaticProps<PageProps> = async (context) => ({
     subscription: await createSubscription<PrimaryPageBySlug>(
       context,
       primaryPageBySlug,
-      { slug: 'home' },
+      { slug: ROOT_SLUG },
     ),
   },
 })

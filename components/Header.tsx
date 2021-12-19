@@ -5,6 +5,7 @@ import classNames from 'classnames'
 
 import { PrimaryPageBySlug_header } from '../gql/types/PrimaryPageBySlug'
 import { scrollToContact } from '../util/scrollToContact'
+import { ROOT_SLUG } from '../util/url'
 
 export const Header: FC<{
   header: PrimaryPageBySlug_header
@@ -51,11 +52,14 @@ export const Header: FC<{
         <div className={classNames('navbar-menu', { 'is-active': isOpen })}>
           <div className="navbar-end">
             {header.links.map((link) => {
-              const href = `/${link.slug || ''}`
+              const path = `/${link.slug || ''}`
+              const href = `/${link.slug === ROOT_SLUG ? '' : link.slug ?? ''}`
               const isActive =
-                router.pathname === '/[slug]'
+                router.pathname === '/'
+                  ? link.slug === ROOT_SLUG
+                  : router.pathname === '/[slug]'
                   ? link.slug === router.query.slug
-                  : router.pathname.startsWith(href)
+                  : router.pathname.startsWith(path)
               return (
                 <Link key={href} href={href}>
                   <a

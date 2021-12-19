@@ -4,3 +4,5 @@ export const prefixByTypename = {
   DownloadPageRecord: '/downloads/',
   PrimaryPageRecord: '/',
 } as const
+
+export const ROOT_SLUG = 'home'
