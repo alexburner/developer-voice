@@ -16,6 +16,30 @@
 .section.BannerRecord {
   padding-top: 6em;
   padding-bottom: 6em;
+
+  @include mobile {
+    .logo-image {
+      max-width: 400px;
+    }
+  }
+
+  @include tablet {
+    .logo-image {
+      max-width: 250px;
+    }
+  }
+
+  @include desktop {
+    .logo-image {
+      max-width: 300px;
+    }
+  }
+
+  @include widescreen {
+    .logo-image {
+      max-width: 300px;
+    }
+  }
 }
 
 .section.TitleTextRecord {
