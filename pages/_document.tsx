@@ -15,6 +15,12 @@ export default class extends Document {
             crossOrigin="anonymous"
           />
 
+          {/* Google Fonts */}
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Open+Sans|Space+Mono"
+          />
+
           {/* Google Analytics */}
           <script
             async
