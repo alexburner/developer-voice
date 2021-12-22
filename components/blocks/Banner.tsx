@@ -9,7 +9,7 @@ import { ButtonInternal } from './ButtonInternal'
 export const Banner: FC<{
   block: PrimaryPageBySlug_primaryPage_blocks_BannerRecord
 }> = ({ block }) => (
-  <div className="columns">
+  <div className="columns is-vcentered">
     <div className="column">
       {block.logoImage && (
         <div className="logo-image">
